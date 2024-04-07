@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+}
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2012/05/02/17/40/bees-45789_960_720.png");
+  background-image: url("https://cdn.pixabay.com/photo/2022/09/05/12/35/geometric-pattern-7434109_640.jpg");
+}
+.overlay {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container {
+  margin-top: 5px;
+  margin-left: 5%;
+  overflow: hidden;
+}
+.moebel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.storage {
+  margin-top: 200px;
+}
+.fruit1 {
+  position: absolute;
+  top: 120px;
+  left: 27%;
+}
+.product1 {
+  position: absolute;
+  top: 58%;
+  left: 40%;
+}
+.product2 {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  transform: rotate(180deg);
+}
+.product3 {
+  position: absolute;
+  top: 57%;
+  left: 45%;
+}
+.product4 {
+  position: absolute;
+  top: 64%;
+  left: 47%;
+  transform: rotate(180deg);
+}
+.product5 {
+  position: absolute;
+  top: 69%;
+  left: 51%;
+}
+.product6 {
+  position: absolute;
+  top: 69%;
+  left: 49%;
+  transform: rotate(180deg);
+}
+.product7 {
+  position: absolute;
+  top: 71%;
+  left: 49%;
+  transform: rotate(180deg);
+}
+.product8 {
+  position: absolute;
+  top: 56%;
+  left: 46%;
+}
+.fruit2 {
+  position: absolute;
+  top: 120px;
+  left: 30%;
+}
+.fruit3 {
+  position: absolute;
+  top: 130px;
+  left: 38%;
+  transform: rotate(180deg);
+}
+.fruit4 {
+  position: absolute;
+  top: 360px;
+  left: 77%;
+  transform: rotate(280deg);
+}
+.nuts1 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+}
+.nuts2 {
+  position: absolute;
+  top: 124px;
+  left: 45%;
+  transform: perspective(4cm) rotateX(35deg) rotateY(40deg);
+}
+.nuts3 {
+  position: absolute;
+  top: 478px;
+  left: 87%;
+}
+.nuts4 {
+  position: absolute;
+  top: 478px;
+  left: 88%;
+}
+.nuts5 {
+  position: absolute;
+  top: 478px;
+  left: 75%;
+}
+.worm1 {
+  position: absolute;
+  top: 220px;
+  left: 73%;
+  transform: perspective(4cm) rotateX(15deg) rotateY(40deg);
+}
+.worm2 {
+  position: absolute;
+  top: 225px;
+  left: 83%;
+}
+.beetle1 {
+  position: absolute;
+  top: 383px;
+  left: 89%;
+}
+.beetle2 {
+  position: absolute;
+  top: 380px;
+  left: 87%;
+}
+.beetle3 {
+  position: absolute;
+  top: 398px;
+  left: 75%;
+}
+.spider {
+  position: absolute;
+  top: 224px;
+  left: 67.5%;
+  animation: runSpider 10s ease-in-out infinite;
+}
+.basket {
+  position: absolute;
+  top: 57%;
+  left: 39%;
+}
+
+@keyframes runSpider {
+  0% {
+    top: 224px;
+  }
+  50% {
+    top: 474px;
+  }
+  100% {
+    top: 224px;
+  }
+}
+
+.message {
+  padding-left: 15%;
+  width: 500px;
+  height: 250px;
+  background-color: transparent;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.leave {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 500px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.leave:hover {
+  color: #e33bbc;
+  font-weight: 800;
+  text-shadow: 1px 1px black;
+}
