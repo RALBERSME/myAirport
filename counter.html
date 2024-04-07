@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="counter.css" />
+    <title>COUNTER</title>
+  </head>
+  <body>
+    <div class="half">
+      <div class="container">
+        <div id="details" class="invisible">
+          <div class="detailInfo">
+            <div class="detailItem">
+              <b>Long</b> Distance Flight
+              <b
+                ><em><u>Eastern</u> Route</em></b
+              ><br />
+              <a href="longEast.html" target="_blank">cick for details</a>
+            </div>
+            <div class="detailItem">
+              <b>Long</b> Distance Flight
+              <b
+                ><em><u>Western </u>Route</em></b
+              ><br />
+              <a href="longWest.html" target="_blank">cick for details</a>
+            </div>
+            <div class="detailItem">
+              <b>Middle</b> Distance Flight<br />
+              <a href="middleDistance.html" target="_blank">cick for details</a>
+            </div>
+            <div class="detailItem">
+              <b>Short</b> Distance Flight<br />
+              <a href="middleDistance.html" target="_blank">cick for details</a>
+            </div>
+            <div class="detailItem">
+              Travel requirements fulfilled (Visa, etc.)<br />
+              <a
+                href="https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/reise-und-sicherheitshinweise"
+                target="_blank"
+                >cick for details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="warning">
+        <p id="introduction">
+          <b
+            >As you don't want to wait in line, you might get your ticket and
+            check-in via mobile.</b
+          >
+        </p>
+        <input
+          id="inputField"
+          class="pressButton"
+          type="button"
+          onclick="getForm()"
+          value="Click to check-in."
+        />
+        <img class="mobile" id="mobile" src="mobile.png" alt="mobile" />
+
+        <form id="myForm" name="myForm" class="hidden">
+          <div class="mainContainer">
+            <ul>
+              <li>
+                <a href="#" target="_blank"><b>Checking List:</b></a>
+              </li>
+              <li>
+                <input type="checkbox" /><input
+                  id="check1"
+                  type="checkbox"
+                  name="check"
+                  value="check1"
+                />
+                <label for="check1"></label><br />
+                <b>Long</b> Distance Flight <b><em>Eastern Route</em></b>
+              </li>
+              <li>
+                <input type="checkbox" /><input
+                  id="check2"
+                  type="checkbox"
+                  name="check"
+                  value="check2"
+                />
+                <label for="check2"></label><br />
+                <b>Long</b> Distance Flight <b><em>Western Route</em></b>
+              </li>
+              <li>
+                <input type="checkbox" /><input
+                  id="check3"
+                  type="checkbox"
+                  name="check"
+                  value="check3"
+                />
+                <label for="check3"></label><br />
+                <b>Middle</b> distance flight
+              </li>
+
+              <li>
+                <input type="checkbox" /><input
+                  id="check4"
+                  type="checkbox"
+                  name="check"
+                  value="check4"
+                />
+                <label for="check4"></label><br />
+                <b>Short</b> distance flight
+              </li>
+              <li>
+                <input type="checkbox" /><input
+                  id="check5"
+                  type="checkbox"
+                  name="check"
+                  value="check5"
+                />
+                <label for="check5"></label><br />
+                Travel requirements fulfilled (Visa, etc.)
+              </li>
+            </ul>
+          </div>
+          <button class="submitBtn" type="button" onclick="evaluation()">
+            Submit
+          </button>
+          <a class="resetBtn" type="reset" onclick="resetData()">Reset</a>
+        </form>
+        <div id="warning"></div>
+      </div>
+      <div class="boardingCard">
+        <img
+          class="boardingCardImg"
+          src="https://cdn.pixabay.com/photo/2021/01/28/12/23/ticket-5957841_960_720.png"
+        />
+        <div class="boardingCardMessage">
+          Your destination is:<span id="destination"></span> <br />Proceed to
+          gate no.: <span id="gate"></span><br /><br />
+          <a class="nextPage invisible" id="nextPage" href="securityCheck.html"
+            >click here to continue</a
+          ><br /><small><em>Have a nice trip.</em></small
+          ><br />
+        </div>
+      </div>
+    </div>
+    <script src="counter.js"></script>
+  </body>
+</html>
