@@ -1,0 +1,89 @@
+:root {
+  /* Farbvariablen */
+  --background-color: black;
+  --dot-matrix-bg-color: #222222;
+  --dot-matrix-font-color: orange;
+  --dot-matrix-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+
+  /* Font & Spacing Variablen */
+  --font-family: monospace;
+  --font-size: 36px;
+  --letter-spacing: 4px;
+  --span-width-height: 36px;
+  --span-margin-right: 4px;
+  --dot-matrix-padding: 4rem;
+  --list-item-margin-bottom: 1rem;
+  --flex-gap: 4rem;
+  --flex-margin-bottom: 12px;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-matrix {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  letter-spacing: var(--letter-spacing);
+  color: var(--dot-matrix-font-color);
+  background-color: var(--dot-matrix-bg-color);
+  padding: var(--dot-matrix-padding);
+  border-radius: 8px;
+  box-shadow: var(--dot-matrix-shadow);
+}
+
+.dot-matrix span {
+  display: inline-block;
+  width: var(--span-width-height);
+  height: var(--span-width-height);
+  border: 1px dotted var(--dot-matrix-font-color);
+  line-height: var(--span-width-height);
+  text-align: center;
+  margin-right: var(--span-margin-right);
+}
+
+.dot-matrix ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.dot-matrix li {
+  margin-bottom: var(--list-item-margin-bottom);
+}
+
+.dot-matrix .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--flex-gap);
+  margin-bottom: var(--flex-margin-bottom);
+}
+.half {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.secondHalf {
+  padding-left: 20px;
+}
+.liGate {
+  padding-top: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+.liGate:hover {
+  color: bisque;
+}
+
+.bye {
+  text-decoration: none;
+  color: orange;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.bye:hover {
+  color: orangered;
+}

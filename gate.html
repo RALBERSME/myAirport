@@ -3,9 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GATE</title>
+    <link rel="stylesheet" href="gate.css" />
+    <title>Gate Table</title>
   </head>
   <body>
-    THIS IS THE GATE
+    <div class="dot-matrix">
+      <div class="half">
+        <div class="firstHalf">
+          <div class="flex">
+            <div>Route</div>
+            <div>Destination</div>
+            <div>Departure</div>
+            <div>Gate</div>
+          </div>
+          <ul id="locations"></ul>
+          <p>
+            <u>Explanations:</u><br /><small
+              >LE=Long Eastern; LW=Long Western; <br />MD=Middle Distance;
+              SD=Short Distance</small
+            >
+          </p>
+        </div>
+        <div class="secondHalf">
+          click Gate:<br />
+          <ul class="ulGate">
+            <li class="liGate" id="storch"><small>CLICK</small></li>
+            <li class="liGate" id="mauer"><small>CLICK</small></li>
+            <li class="liGate" id="mönch"><small>CLICK</small></li>
+            <li class="liGate" id="star"><small>CLICK</small></li>
+            <li class="liGate" id="kranich"><small>CLICK</small></li>
+            <li class="liGate" id="wild"><small>CLICK</small></li>
+            <li class="liGate" id="rauch"><small>CLICK</small></li>
+            <li class="liGate" id="pirol"><small>CLICK</small></li>
+            <li class="liGate" id="adler"><small>CLICK</small></li>
+          </ul>
+          <br /><a href="startfield.html" class="bye"
+            >THEN CLICK<br />
+            HERE FOR THE <br />START FIELD. BYE</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="gate.js"></script>
   </body>
 </html>
