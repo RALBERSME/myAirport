@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("all.jpg");
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+ul {
+  margin: 5%;
+  width: 100%;
+}
+li {
+  list-style: none;
+  margin-bottom: 7.5%;
+  border: 1px solid rgb(194, 175, 140);
+  border-radius: 5%;
+  padding: 10%;
+  color: rgb(250, 208, 131);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.5px 0.5px yellow;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+li:hover {
+  cursor: pointer;
+  background-color: rgb(194, 175, 140);
+  color: black;
+}
+hr {
+  border-top: 1px solid rgb(194, 175, 140);
+  margin-bottom: 2px;
+  border-radius: 50%;
+}
+.hidden {
+  display: none;
+}
+#ballon {
+  position: absolute;
+  left: 30%;
+  animation: ballonFly 10s ease-in-out forwards;
+}
+
+@keyframes ballonFly {
+  0% {
+    top: 52.5%;
+    left: 30%;
+  }
+  20% {
+    left: 35%;
+  }
+  40% {
+    left: 28%;
+  }
+  55% {
+    left: 22%;
+  }
+  80% {
+    left: 33%;
+  }
+  100% {
+    top: -48%;
+    left: 35%;
+  }
+}
+
+#zeppelin {
+  position: absolute;
+  animation: zeppelinFly 10s ease-in-out forwards;
+}
+
+@keyframes zeppelinFly {
+  0% {
+    top: 67%;
+    left: -2%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: -39%;
+    left: 37%;
+    transform: rotate(-20deg);
+  }
+}
+#flugzeug {
+  position: absolute;
+  animation: flugzeugFly 6s ease-in-out forwards;
+}
+
+@keyframes flugzeugFly {
+  0% {
+    top: 70%;
+    left: 40%;
+    transform: rotate(-30deg);
+  }
+  50% {
+    left: 20%;
+  }
+  100% {
+    top: -48%;
+    left: 48%;
+    transform: rotateY(180deg) rotate(0deg);
+  }
+}
+#rakete {
+  position: absolute;
+  animation: raketeFly 2s ease-in-out forwards;
+}
+
+@keyframes raketeFly {
+  0% {
+    top: 53%;
+    left: 25%;
+  }
+  100% {
+    top: -47%;
+    left: 25%;
+  }
+}
+#bird {
+  top: 75%;
+  left: 40%;
+  position: absolute;
+  animation: birdFly 7s ease-in-out forwards;
+}
+
+@keyframes birdFly {
+  0% {
+    top: 75%;
+    left: 40%;
+  }
+  30% {
+    left: 20%;
+    transform: rotateY(180deg);
+  }
+  60% {
+    left: 40%;
+    transform: rotateY(-540deg);
+  }
+  90% {
+    transform: rotateY(180deg);
+    left: 40%;
+  }
+  100% {
+    top: -47%;
+    left: 40%;
+  }
+}
+.info {
+  color: white;
+}
+/* messages */
+.info {
+  position: absolute;
+  background-color: wheat;
+  color: black;
+  margin-left: 67.5%;
+  margin-right: 2.5%;
+  font-size: 1.5rem;
+  padding: 25px;
+  border-radius: 5px;
+}
+.infoBallon {
+  top: 600px;
+  animation: moveInfo 30s linear forwards;
+}
+.infoZeppelin {
+  top: 600px;
+  animation: moveInfo 25s linear forwards;
+}
+.infoFlugzeug {
+  top: 600px;
+  animation: moveInfo 20s linear forwards;
+}
+.infoRakete {
+  top: 600px;
+  animation: moveInfo 25s linear forwards;
+}
+.infoBird {
+  top: 600px;
+  animation: moveInfo 30s linear forwards;
+}
+
+@keyframes moveInfo {
+  0% {
+  }
+  100% {
+    top: -1100px;
+  }
+}

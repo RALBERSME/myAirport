@@ -146,16 +146,23 @@ body {
   top: 398px;
   left: 75%;
 }
+.water1 {
+  position: absolute;
+  top: 101px;
+  left: 89%;
+  transform: rotate(-30deg);
+}
+.water2 {
+  position: absolute;
+  top: 101px;
+  left: 87%;
+  transform: rotate(-30deg);
+}
 .spider {
   position: absolute;
   top: 224px;
   left: 67.5%;
   animation: runSpider 10s ease-in-out infinite;
-}
-.basket {
-  position: absolute;
-  top: 57%;
-  left: 39%;
 }
 
 @keyframes runSpider {
@@ -168,6 +175,51 @@ body {
   100% {
     top: 224px;
   }
+}
+
+.spiderLine {
+  position: absolute;
+  width: 50px;
+  border-left: 3px solid black;
+  left: 70.85%;
+  animation: stretchLine 10s ease-in-out infinite;
+}
+
+@keyframes stretchLine {
+  0% {
+    top: 224px;
+    height: 30px;
+  }
+  5% {
+    top: 224px;
+    height: 150px;
+  }
+  45% {
+    top: 224px;
+    height: 350px;
+  }
+  50% {
+    top: 224px;
+    height: 300px;
+  }
+  55% {
+    top: 224px;
+    height: 200px;
+  }
+  85% {
+    top: 224px;
+    height: 30px;
+  }
+  100% {
+    top: 224px;
+    height: 0px;
+  }
+}
+
+.basket {
+  position: absolute;
+  top: 57%;
+  left: 39%;
 }
 
 .message {

@@ -95,6 +95,21 @@ function clickBeetle3() {
   beetle3.classList.remove("beetle3");
   beetle3.classList.add("product6");
 }
+
+// next element
+const water1 = document.getElementById("water1");
+
+function clickWater1() {
+  water1.classList.remove("water1");
+  water1.classList.add("product3");
+}
+// next element
+const water2 = document.getElementById("water2");
+
+function clickWater2() {
+  water2.classList.remove("water2");
+  water2.classList.add("product4");
+}
 //////////
 
 function leavePage() {
