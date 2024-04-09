@@ -5,6 +5,14 @@ function getForm() {
   makeIntroInvisible();
   setTimeout(() => showHide(), 2000);
   setTimeout(() => makeVisible(), 2000);
+  takeCareOfLuggage();
+}
+/*message to traveller */
+function takeCareOfLuggage() {
+  const text = "Passenger Warning Do not leave your luggage unattended";
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = text;
+  window.speechSynthesis.speak(msg);
 }
 function showHide() {
   const hiddeninput = document.getElementById("myForm");
@@ -36,7 +44,7 @@ function evaluation() {
       requirements = true;
     } else {
       const warning = document.getElementById("warning");
-      warning.innerHTML = "Travel Requirements must be met.";
+      warning.innerHTML = "Click Requirements!";
       setTimeout(function () {
         warning.innerHTML = "";
       }, 1000);

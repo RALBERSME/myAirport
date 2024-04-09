@@ -223,6 +223,8 @@ input[type="checkbox"]:checked + label:before {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.7rem;
   text-shadow: none;
+  padding-left: 70px;
+  padding-top: 10px;
 }
 /* boarding card */
 .boardingCard {

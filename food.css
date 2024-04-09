@@ -6,8 +6,7 @@
 html {
 }
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2012/05/02/17/40/bees-45789_960_720.png");
-  background-image: url("https://cdn.pixabay.com/photo/2022/09/05/12/35/geometric-pattern-7434109_640.jpg");
+  background-image: url("geometric-pattern.png");
 }
 .overlay {
   margin-left: 50px;
@@ -204,9 +203,13 @@ body {
   }
   55% {
     top: 224px;
+    height: 250px;
+  }
+  75% {
+    top: 224px;
     height: 200px;
   }
-  85% {
+  95% {
     top: 224px;
     height: 30px;
   }

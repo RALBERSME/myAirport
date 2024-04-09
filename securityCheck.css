@@ -47,7 +47,7 @@ li {
 }
 
 .container3 {
-  background-image: url("https://cdn.pixabay.com/photo/2022/04/04/01/50/skeleton-7110208_640.png");
+  background-image: url("skeleton.png");
   background-position: center/cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -88,19 +88,28 @@ li {
   height: 8px;
   background: var(--scanColor);
   border-radius: 8px;
-  filter: drop-shadow(0 0 20px var(--scanColor))
-    drop-shadow(0 0 60px var(--scanColor));
   animation: animate_line 4s ease-in-out infinite;
 }
 @keyframes animate_line {
-  0%,
-  100% {
+  0% {
     top: 0%;
+    filter: drop-shadow(0 0 20px #fdfe02) drop-shadow(0 0 90px #fdfe02);
+  }
+  49% {
+    filter: drop-shadow(0 0 20px #00ffbc) drop-shadow(0 0 90px #00ffbc);
   }
   50% {
     top: 100%;
+    filter: drop-shadow(0 0 20px var(--scanColor))
+      drop-shadow(0 0 60px var(--scanColor));
+  }
+  100% {
+    top: 0%;
+    filter: drop-shadow(0 0 20px var(--scanColor))
+      drop-shadow(0 0 60px var(--scanColor));
   }
 }
+
 .scan h3 {
   text-transform: uppercase;
   font-size: 2em;

@@ -1,7 +1,7 @@
 const jsonData = [
   { text: "LE_____CAPE-TOWN_____AUG_______A12" } /*Weißstorch*/,
   { text: "LW_____KINSHASA______AUG_______A15" } /*Mauersegler*/,
-  { text: "KD_____MURCIA________SEP_______C03" } /*Mönchsgrasmücke*/,
+  { text: "SD_____MURCIA________SEP_______C03" } /*Mönchsgrasmücke*/,
   { text: "MD_____ALGIER________OKT_______B34" } /*Star*/,
   { text: "SD_____MERIDA________OKT_______C03" } /*Kranich*/,
   { text: "MD_____LISSABON______OKT_______B34" } /*Wildgans*/,
@@ -20,7 +20,7 @@ jsonData.forEach((item) => {
 animateLocations();
 
 function randomString(length) {
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const chars = "Ӕβ🌼δĘφG☀IĲK☻M☔ŒPQ🐹Σϑ🌞⛱ŴξYZΩ☕2∛Ꮞ☘Ꮥ⇈♫Ꭽ";
   let result = "";
   for (let i = 0; i < length; i++) {
     result += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -37,7 +37,7 @@ function animateLocations() {
 
   locations.forEach((location) => {
     location.innerHTML = convertToSpans(
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".slice(
+      "Ӕβ🌼CδĘφG☀IĲK☻M☔ŒPQ🐹Σϑ🌞⛱ŴξYZΩ☕2∛Ꮞ☘Ꮥ⇈♫Ꭽ".slice(
         0,
         location.getAttribute("data-original").length
       )

@@ -17,6 +17,16 @@ const fruit3 = document.getElementById("fruit3");
 function clickFruit3() {
   fruit3.classList.remove("fruit3");
   fruit3.classList.add("product3");
+  fruit3Sound();
+}
+/*message to shopper */
+function fruit3Sound() {
+  const text =
+    "The red berries of rowan can be eaten after cooking. If they are harvested after the first frost, they can best develop their sweet-tart aroma. Leaves and flowers of the rowan tree are used as medicinal products";
+
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = text;
+  window.speechSynthesis.speak(msg);
 }
 // next element
 const fruit4 = document.getElementById("fruit4");

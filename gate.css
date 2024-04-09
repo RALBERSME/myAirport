@@ -44,6 +44,8 @@ body {
   line-height: var(--span-width-height);
   text-align: center;
   margin-right: var(--span-margin-right);
+
+  border: 1.5px ridge rgba(211, 220, 50, 0.6);
 }
 
 .dot-matrix ul {
@@ -68,6 +70,9 @@ body {
 }
 .secondHalf {
   padding-left: 20px;
+}
+.explanations {
+  color: rgba(211, 220, 50, 0.6);
 }
 .liGate {
   padding-top: 1px;

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("https://cdn.pixabay.com/photo/2019/03/30/20/27/bird-4091989_640.png");
+  background-image: url("bachgroundBirds.png");
   background-position: center/cover;
 }
 .container {
@@ -53,8 +53,9 @@ body {
   text-shadow: 2px 2px wheat;
 }
 .backLink {
-  background-color: #5356ff;
+  background-color: #9c9df8;
   color: wheat;
+  text-shadow: 0.5px 0.5px black;
   border: 1px solid wheat;
 }
 a.backLink:hover {
@@ -62,13 +63,13 @@ a.backLink:hover {
   background-color: wheat;
 }
 .cardBack {
-  background-image: linear-gradient(25deg, #ff61d2, #fe9090 50%);
+  background-image: linear-gradient(25deg, #c689b5, #fe9090 50%);
 }
 .cardBack:before {
   background-image: linear-gradient(
     109.6deg,
     rgba(156, 252, 248, 1) 11.2%,
-    rgba(110, 123, 251, 1) 91.1%
+    rgb(189, 194, 244) 91.1%
   );
 }
 .card:hover:before {
@@ -111,4 +112,12 @@ a:hover {
 }
 .card:hover .content {
   color: white;
+}
+#english {
+  color: white;
+  font-size: 1.5rem;
+}
+#english:hover {
+  text-decoration: underline;
+  color: yellow;
 }

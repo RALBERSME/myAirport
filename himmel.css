@@ -142,7 +142,7 @@ hr {
   top: 75%;
   left: 40%;
   position: absolute;
-  animation: birdFly 7s ease-in-out forwards;
+  animation: birdFly 11s ease-in-out forwards;
 }
 
 @keyframes birdFly {
@@ -183,19 +183,19 @@ hr {
 }
 .infoBallon {
   top: 600px;
-  animation: moveInfo 30s linear forwards;
+  animation: moveInfo 45s linear forwards;
 }
 .infoZeppelin {
   top: 600px;
-  animation: moveInfo 25s linear forwards;
+  animation: moveInfo 35s linear forwards;
 }
 .infoFlugzeug {
   top: 600px;
-  animation: moveInfo 20s linear forwards;
+  animation: moveInfo 30s linear forwards;
 }
 .infoRakete {
   top: 600px;
-  animation: moveInfo 25s linear forwards;
+  animation: moveInfo 35s linear forwards;
 }
 .infoBird {
   top: 600px;
@@ -208,4 +208,13 @@ hr {
   100% {
     top: -1100px;
   }
+}
+
+#english {
+  color: white;
+  font-size: 1.5rem;
+}
+#english:hover {
+  text-decoration: underline;
+  color: orange;
 }
