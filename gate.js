@@ -1,13 +1,13 @@
 const jsonData = [
-  { text: "LE_____CAPE-TOWN_____AUG_______A12" } /*Weißstorch*/,
-  { text: "LW_____KINSHASA______AUG_______A15" } /*Mauersegler*/,
-  { text: "SD_____MURCIA________SEP_______C03" } /*Mönchsgrasmücke*/,
-  { text: "MD_____ALGIER________OKT_______B34" } /*Star*/,
-  { text: "SD_____MERIDA________OKT_______C03" } /*Kranich*/,
-  { text: "MD_____LISSABON______OKT_______B34" } /*Wildgans*/,
-  { text: "LW_____DURBAN________AUG_______A15" } /*Rachschwalbe*/,
-  { text: "LW_____BRAZZAVILLE___JUL_______A15" } /*Pirol*/,
-  { text: "LE_____LUSAKA________SEP_______A12" } /*Adler*/,
+  { text: "LE_____CAPE-TOWN_____AUG_____A12" } /*Weißstorch*/,
+  { text: "LW_____KINSHASA______AUG_____A15" } /*Mauersegler*/,
+  { text: "SD_____MURCIA________SEP_____C03" } /*Mönchsgrasmücke*/,
+  { text: "MD_____ALGIER________OKT_____B34" } /*Star*/,
+  { text: "SD_____MERIDA________OKT_____C03" } /*Kranich*/,
+  { text: "MD_____LISSABON______OKT_____B34" } /*Wildgans*/,
+  { text: "LW_____DURBAN________AUG_____A15" } /*Rachschwalbe*/,
+  { text: "LW_____BRAZZAVILLE___JUL_____A15" } /*Pirol*/,
+  { text: "LE_____LUSAKA________SEP_____A12" } /*Adler*/,
 ];
 
 jsonData.forEach((item) => {
