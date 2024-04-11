@@ -60,8 +60,10 @@ body {
 
 .dot-matrix .flex {
   display: flex;
+  margin-right: 5%;
   justify-content: space-between;
   gap: var(--flex-gap);
+
   margin-bottom: var(--flex-margin-bottom);
 }
 .half {
